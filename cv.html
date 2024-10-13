@@ -20,7 +20,6 @@
             max-width: 900px;
             margin: 20px auto;
             background: #fff;
-            /* display: flex; */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -60,8 +59,8 @@
         }
 
         .section ul {
-            list-style: none;
-            padding: 0;
+            /* list-style: none; */
+            padding-left: 25px;
         }
 
         .section ul li {
@@ -75,8 +74,20 @@
 
         }
 
-        .contact-info div:last-child {
-            margin-right: 0;
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-links div {
+            display: flex;
+        }
+
+        .social-links div img {
+            width: 50px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -112,7 +123,7 @@
             <h2>Experience</h2>
             <ul>
                 <li>1 year as a Teacher at Education & Training Center</li>
-                <li>8 months as an Administrator</li>
+                <li>6 months as an Admin assistant</li>
                 <li>1.5 years as a Salesman in Medicine</li>
                 <li>1 year as a Salesman in Garments</li>
             </ul>
@@ -128,30 +139,22 @@
             </ul>
         </div>
 
-        <div class="section contact-info">
-            <h2>Personal Information</h2>
-            <div>
-                <strong>Father's Name:</strong> Sheikh Musarat Hussain
-            </div>
-            <div>
-                <strong>Contact:</strong> 03021020813
-            </div>
-            <div>
-                <strong>Email:</strong> abdullahhussain0501@gmail.com
-            </div>
-            <div>
-                <strong>Religion:</strong> Islam
-            </div>
-            <div>
-                <strong>Marital Status:</strong> Unmarried
-            </div>
-            <div>
-                <strong>Nationality:</strong> Pakistani
-            </div>
-            <div>
-                <strong>Address:</strong> 3-D/17/1A, Block 3 Nazimabad, Karachi, Sindh 74600, Pakistan
+        <div class="section">
+            <h2>Social Links</h2>
+            <div class="social-links">
+                <div>
+                    <a href="https://www.linkedin.com/in/sheikhabdullah01/">
+                        <img src="./Images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/SheikhAbdullah1/">
+                        <img src="./Images/github.png" alt="GitHub">
+                    </a>
+                </div>
             </div>
         </div>
+
 
         <div class="section">
             <h2>Reference</h2>

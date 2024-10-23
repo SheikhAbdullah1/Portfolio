@@ -762,6 +762,14 @@ span {
     height: auto;
     padding-bottom: 5rem;
   }
+  .right-img img{
+      width: 150rem;
+      height: 35rem;
+      border-radius: 5px;
+      margin-left: 10rem;
+  }
+  
+  }
   .about{
     display: block;
     text-align: center;

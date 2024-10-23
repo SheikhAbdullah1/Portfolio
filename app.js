@@ -1,12 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navbar = document.querySelector(".navbar");
 
-  menuToggle.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-    menuToggle.classList.toggle("active");
-  });
+  if (menuToggle && navbar) { // Check if elements exist
+      menuToggle.addEventListener("click", function () {
+          navbar.classList.toggle("active");
+          menuToggle.classList.toggle("active");
+      });
+  } else {
+      console.error("Menu toggle or navbar not found");
+  }
 });
+
 
 // Filtered Portfolio Items
 document.querySelectorAll(".filter-btn").forEach((button) => {

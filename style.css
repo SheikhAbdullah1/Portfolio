@@ -626,6 +626,7 @@ span {
   }
   .home-content {
     text-align: center;
+    margin-top: 10rem;
   }
   .home-content h1 {
     font-size: 45px;

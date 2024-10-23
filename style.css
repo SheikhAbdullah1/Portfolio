@@ -606,6 +606,7 @@ span {
   }
   .menu-toggle {
     display: block;
+    font-size: 24px;
   }
 
   .navbar.active {

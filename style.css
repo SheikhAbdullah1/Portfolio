@@ -474,7 +474,7 @@ span {
 /* Media Queries */
 
 /* Mobile small devices (up to 480px) */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 650px) {
   .header {
     padding: 1rem 5%;
     flex-direction: column;
@@ -530,6 +530,22 @@ span {
 
   .home-img img {
     width: 80%;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+  }
+
+  .navbar.active {
+    display: flex; /* Show the navbar when active */
+    flex-direction: column;
+  }
+  .right-img img {
+    /* max-width: 80%; */
+    display: block;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 20px;
   }
 
   .about {

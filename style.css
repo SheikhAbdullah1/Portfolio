@@ -672,14 +672,14 @@ span {
     /* background-color: var(--second-bg-color); */
     padding: 2rem;
     text-align: center;
-}
+  }
   .portfolio .portfolio-box {
     width: 80%;
     height: auto;
     margin-left: 50px;
     /* grid-template-columns: repeat(2, 1fr); Two images per line */
   }
-  .portfolio-container{
+  .portfolio-container {
     margin-left: -25px;
   }
   .portfolio-container img {
@@ -693,10 +693,10 @@ span {
     transform: translateY(100%);
     transition: 0.5s ease;
   }
-  .portfolio-box .portfolio-layer h4{
+  .portfolio-box .portfolio-layer h4 {
     font-size: 14px;
   }
-  .portfolio-box .portfolio-layer p{
+  .portfolio-box .portfolio-layer p {
     font-size: 12px;
   }
   .footer {
@@ -740,4 +740,58 @@ span {
     opacity: 1;
     transform: scale(1); /* Normal size */
   }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  section {
+    min-height: 32vh;
+    padding: 10rem 9% 2rem;
+  }
+  .about-img img {
+    width: 60%;
+    height: 25%;
+    margin-left: 20rem;
+  }
+  .home {
+    display: block;
+    text-align: center;
+  }
+  .right-img {
+    padding-top: 5rem;
+    width: 80%;
+    height: auto;
+    padding-bottom: 5rem;
+  }
+  .about{
+    display: block;
+    text-align: center;
+  }
+  .about-img{
+    width: 100%;
+    height: 50%;
+  }
+  .about-content h2 {
+    text-align: center;
+    line-height: 1.2;
+}
+.services-container{
+  display: block;
+}
+.services-container .services-box{
+  margin-top: 20px;
+}
+
+.portfolio-box{
+  margin-top: 30px;
+  /* width: 80%; */
+  /* height: auto; */
+}
+
+.portfolio-container{
+  display: block;
+}
+.portfolio-container .portfolio-box {
+  display: block;
+  height: auto;
+}
 }

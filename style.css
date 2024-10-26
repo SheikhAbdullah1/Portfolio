@@ -624,6 +624,10 @@ span {
     display: block;
     font-size: 24px;
   }
+  section {
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+}
 
   .navbar.active {
     display: flex; /* Show the navbar when active */
@@ -639,7 +643,7 @@ span {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: -10rem;
+    margin-top: -20rem;
   }
   .home-content {
     text-align: center;

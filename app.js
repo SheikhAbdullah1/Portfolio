@@ -27,21 +27,39 @@ document.querySelectorAll(".filter-btn").forEach((button) => {
   });
 });
 
-
-const roles = ['Front-End Developer', 'UI/UX Designer', 'JavaScript Developer', 'Web Developer'];
+const roles = [
+  'Front-End Developer',
+  'React Developer',
+  'Gen AI Chatbot Developer',
+  'Python Developer'
+];
 let currentIndex = 0;
 
-function changeRole() {
-    const roleElement = document.getElementById('role');
-    roleElement.style.opacity = 0; // Fade out
+function typeRole() {
+  const roleElement = document.getElementById('role');
+  const currentRole = roles[currentIndex];
+  let charIndex = 0;
 
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % roles.length; // Update index
-        roleElement.textContent = roles[currentIndex]; // Change the role text
-        roleElement.style.opacity = 1; // Fade in
-    }, 500); // Wait for fade-out animation to complete
+  // Clear any existing text
+  roleElement.textContent = "";
 
+  // Reveal one letter at a time
+  const typeInterval = setInterval(() => {
+      roleElement.textContent += currentRole.charAt(charIndex);
+      charIndex++;
+
+      // Stop when the entire word is typed
+      if (charIndex === currentRole.length) {
+          clearInterval(typeInterval);
+
+          // Move to the next role after a delay
+          setTimeout(() => {
+              currentIndex = (currentIndex + 1) % roles.length;
+              typeRole(); // Recursively call to type the next role
+          }, 2000); // Wait 2 seconds before switching roles
+      }
+  }, 100); // Adjust typing speed (in ms)
 }
 
-// Change role every 3 seconds
-setInterval(changeRole, 3000);
+// Start typing the first role
+typeRole();

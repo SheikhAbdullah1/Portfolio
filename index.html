@@ -6,17 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio of Sheikh Abdullah Hussain - Frontend Developer and AI Chatbot Developer">
-    <meta name="keywords" content="Frontend Developer, AI Chatbot Developer, Portfolio, HTML, CSS, JavaScript, React">
+        content="Welcome to the portfolio of Sheikh Abdullah Hussain, a skilled Frontend Developer, Python Developer, and AI Chatbot Specialist with expertise in HTML, CSS, JavaScript, React, and cutting-edge AI technologies.">
+    <meta name="keywords"
+        content="Sheikh Abdullah Hussain, Frontend Developer, Python Developer, AI Chatbot Developer, Portfolio, HTML, CSS, JavaScript, React, Flowise, Dialogflow, Kommunicate, Generative AI, Responsive Web Design">
     <meta name="author" content="Sheikh Abdullah Hussain">
-    <title>Sheikh Abdullah - Portfolio</title>
-    
-    <link rel="shortcut icon" href="./Images/bot.jpg" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sheikh Abdullah Hussain - Frontend Developer & AI Specialist">
+    <meta property="og:description"
+        content="Explore the portfolio of Sheikh Abdullah Hussain, showcasing expertise in Frontend Development, Python programming, and Generative AI chatbot development.">
+    <meta property="og:image" content="./Images/portfolio-preview.png">
+    <meta property="og:url" content="https://sheikhabdullah.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sheikh Abdullah Hussain - Portfolio">
+    <meta name="twitter:description"
+        content="Showcasing the work of Sheikh Abdullah Hussain, a professional Frontend Developer and AI Chatbot Developer with 6 months of Generative AI experience.">
+    <meta name="twitter:image" content="./Images/portfolio-preview.png">
+
+    <title>Sheikh Abdullah Hussain - Portfolio</title>
+
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- External Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+
+<style>
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    .text {
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    .typewriter {
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid black;
+        width: 0;
+    }
+
+    .highlight {
+        display: inline-block;
+        opacity: 1;
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
 
 <body>
 
@@ -45,7 +91,9 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Sheikh Abdullah Hussain</h1>
-            <h3 class="text-animate">And I'm a <span class="highlight" id="role">Front-End Developer</span></h3>
+            <h3 class="text-animate fade-in text">And I'm a <span class="highlight" id="role">Front-End Developer</span>
+            </h3>
+
             <p>I am a dynamic and passionate front-end developer with a strong foundation in HTML, CSS, JavaScript and
                 modern frameworks like React and React Native. Passionate about translating creative ideas into
                 responsive, user-friendly interfaces, I am committed to continuous learning and delivering high-quality
@@ -133,6 +181,13 @@
             </div>
 
             <div class="services-box">
+                <h3>Gen AI Chatbot Development</h3>
+                <p>Create intelligent, natural-sounding AI chatbots to enhance customer engagement, automate workflows,
+                    and streamline communication across platforms</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
                 <h3>Graphic Designing</h3>
                 <p>Graphic design involves creating visual content using tools like Adobe Illustrator and Photoshop to
                     communicate messages effectively through typography, imagery, and layout for various media.</p>
@@ -157,8 +212,20 @@
             <button class="filter-btn" data-category="fun-projects">Fun Projects</button>
             <button class="filter-btn" data-category="all">All Projects</button>
         </div> -->
-        
+
         <div class="portfolio-container">
+
+            <div class="portfolio-box" data-category="frontend-dev">
+                <a href="https://e-commerce-fronted-design.vercel.app/" target="_blank" class="portfolio-link">
+                    <img src="./Images/E-commerce.PNG" alt="Animated Navbar">
+                    <div class="portfolio-layer">
+                        <h4>E-Commerce Store</h4>
+                        <p>Developed a responsive E-Commerce store using HTML, CSS, and JavaScript, featuring smooth transitions, intuitive navigation, and an engaging user interface for seamless shopping experiences.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
             <div class="portfolio-box" data-category="frontend-dev">
                 <a href="https://honey-flax.vercel.app/" target="_blank" class="portfolio-link">
                     <img src="./Images/honey wesite.PNG" alt="Animated Navbar">
@@ -170,37 +237,29 @@
                     </div>
                 </a>
             </div>
-        
-            <!-- <div class="portfolio-container">
-            <div class="portfolio-box" data-category="frontend-dev">
-                <a href="https://travelerbysheikh.netlify.app/" target="_blank" class="portfolio-link">
-                    <img src="./Images/traveler webiste.PNG" alt="Animated Navbar">
-                    <div class="portfolio-layer">
-                        <h4>Honey Store</h4>
-                        <p>Created a responsive Honey e-Commerce store using HTML, CSS, and JavaScript with smooth
-                            transitions.
-                        </p>
-                    </div>
-                </a>
-            </div> -->
 
             <div class="portfolio-box" data-category="frontend-dev">
                 <a href="https://eye-care-six.vercel.app/" target="_blank" class="portfolio-link">
-                <img src="./Images/EyeCare website.PNG" alt="Animated Navbar">
-                <div class="portfolio-layer">
-                    <h4>Health Care</h4>
-                    <p>Eye Care website dedicated to promoting eye health awareness, featuring an AI-powered chatbot integrated across web, WhatsApp, Facebook Messenger, and Instagram. The chatbot offers personalized assistance and quick responses to eye care queries</p>
-                </div>
+                    <img src="./Images/EyeCare website.PNG" alt="Animated Navbar">
+                    <div class="portfolio-layer">
+                        <h4>Health Care</h4>
+                        <p>Eye Care website dedicated to promoting eye health awareness, featuring an AI-powered chatbot
+                            integrated across web, WhatsApp, Facebook Messenger, and Instagram. The chatbot offers
+                            personalized assistance and quick responses to eye care queries</p>
+                    </div>
                 </a>
             </div>
 
             <div class="portfolio-box" data-category="frontend-dev">
                 <a href="https://travelerbysheikh.netlify.app/" target="_blank" class="portfolio-link">
-                <img src="./Images/traveler webiste.PNG" alt="Animated Navbar">
-                <div class="portfolio-layer">
-                    <h4>Traverler Agency</h4>
-                    <p>A modern travel agency website designed with HTML, CSS, and JavaScript, offering a seamless user experience for exploring destinations, booking trips, and accessing travel information. The website features an AI chatbot that provides quick assistance, destination recommendations, and booking support.</p>
-                </div>
+                    <img src="./Images/traveler webiste.PNG" alt="Animated Navbar">
+                    <div class="portfolio-layer">
+                        <h4>Traverler Agency</h4>
+                        <p>A modern travel agency website designed with HTML, CSS, and JavaScript, offering a seamless
+                            user experience for exploring destinations, booking trips, and accessing travel information.
+                            The website features an AI chatbot that provides quick assistance, destination
+                            recommendations, and booking support.</p>
+                    </div>
                 </a>
             </div>
 
@@ -283,17 +342,9 @@
                     </div>
                 </a>
             </div>
-            <!-- <div class="portfolio-box" data-category="ai-chatbot">
-                <a href="./Portfolio_Projects_Section/Teachable_Machine/teach.html" target="_blank"
-                    class="portfolio-link">
-                    <img src="./Images/ai assitant.png" alt="AI-Powered Image Classifier">
-                    <div class="portfolio-layer">
-                        <h4>AI-Powered Image Classifier</h4>
-                        <p>Developed an AI image classifier with Teachable Machine and TensorFlow.js, capable of
-                            recognizing cats, dogs, humans, and blank spaces.</p>
-                    </div>
-                </a>
-            </div> -->
+
+          
+
         </div>
     </section>
 
@@ -330,27 +381,25 @@
     </footer>
 
     <!-- Footer Design End -->
-
-    <!-- Kommunicate Chatbot -->
-    <script type="text/javascript">
-        (function (d, m) {
-            var kommunicateSettings =
-                { "appId": "26e2fc1bdce90ce817f36ca341573c372", "popupWidget": true, "automaticChatOpenOnNavigation": true };
-            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-            window.kommunicate = m; m._globals = kommunicateSettings;
-        })(document, window.kommunicate || {});
-        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-    </script>
-
     <!-- dialogflow.cloud.google.com -->
-    <!-- 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-        chat-icon="https://firebasestorage.googleapis.com/v0/b/images-394d7.appspot.com/o/instagram.png?alt=media&token=dc9aa6ac-96d3-4c42-96af-dc412df8ea51"
-        intent="WELCOME" chat-title="Abdullah_Assistant" agent-id="3fdf5192-3120-426d-a165-d9ee528ad11e"
-        language-code="en"></df-messenger> -->
+    <df-messenger intent="WELCOME" ; chat-title="Abdullah" , chat-icon="./Images/favicon.png" ,
+        agent-id="d2d1e23a-5174-4ca6-a8e1-cd6777441d4f" , language-code="en" ,></df-messenger>
+
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: black;
+            /* --df-messenger-bot-message: #878fac; */
+            --df-messenger-button-titlebar-color: #383b41;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: white;
+            /* --df-messenger-send-icon: #878fac; */
+            --df-messenger-user-message: #479b3d;
+        }
+    </style>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>

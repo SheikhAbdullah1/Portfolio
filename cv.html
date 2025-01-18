@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the portfolio of Sheikh Abdullah Hussain, a skilled Frontend Developer, Python Developer, and AI Chatbot Specialist with expertise in HTML, CSS, JavaScript, React, and cutting-edge AI technologies.">
-    <meta name="keywords" content="Sheikh Abdullah Hussain, Frontend Developer, Python Developer, AI Chatbot Developer, Portfolio, HTML, CSS, JavaScript, React, Flowise, Dialogflow, Kommunicate, Generative AI, Responsive Web Design">
+    <meta name="description"
+        content="Welcome to the portfolio of Sheikh Abdullah Hussain, a skilled Frontend Developer, Python Developer, and AI Chatbot Specialist with expertise in HTML, CSS, JavaScript, React, and cutting-edge AI technologies.">
+    <meta name="keywords"
+        content="Sheikh Abdullah Hussain, Frontend Developer, Python Developer, AI Chatbot Developer, Portfolio, HTML, CSS, JavaScript, React, Flowise, Dialogflow, Kommunicate, Generative AI, Responsive Web Design">
     <meta name="author" content="Sheikh Abdullah Hussain">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Sheikh Abdullah Hussain - Frontend Developer & AI Specialist">
-    <meta property="og:description" content="Explore the portfolio of Sheikh Abdullah Hussain, showcasing expertise in Frontend Development, Python programming, and Generative AI chatbot development.">
+    <meta property="og:description"
+        content="Explore the portfolio of Sheikh Abdullah Hussain, showcasing expertise in Frontend Development, Python programming, and Generative AI chatbot development.">
     <meta property="og:image" content="./Images/portfolio-preview.png">
     <meta property="og:url" content="https://sheikhabdullah.netlify.app/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sheikh Abdullah Hussain - Portfolio">
-    <meta name="twitter:description" content="Showcasing the work of Sheikh Abdullah Hussain, a professional Frontend Developer and AI Chatbot Developer with 6 months of Generative AI experience.">
+    <meta name="twitter:description"
+        content="Showcasing the work of Sheikh Abdullah Hussain, a professional Frontend Developer and AI Chatbot Developer with 6 months of Generative AI experience.">
     <meta name="twitter:image" content="./Images/portfolio-preview.png">
 
     <title>Sheikh Abdullah Hussain - Portfolio</title>
-    
+
     <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <!-- External Link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- External Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -37,8 +43,8 @@
         }
 
         .container {
-            width: 80%;
-            max-width: 900px;
+            /* width: 100%; */
+            max-width: 80%;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
@@ -53,174 +59,165 @@
         }
 
         .container1 .download-button img {
-            display: inline-block;
-            color: #fff;
             cursor: pointer;
-            width: 2.5rem;
+            width: 3rem;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
         }
 
-        h1 {
-            font-size: 26px;
+        .container1 h1 {
+            /* font-size: 24px ; */
             color: #007BFF;
-            margin-bottom: 0;
+            text-align: center;
         }
 
         h2 {
-            font-size: 20px;
             border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section ul {
-            padding-left: 25px;
-        }
-
-        .section ul li {
-            margin-bottom: 10px;
-        }
-
-        .section ul li a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .section ul li a:hover {
+            /* margin-bottom: 15px; */
+            /* font-weight: bold ; */
+            /* font-size: 1.8rem; */
             color: #007BFF;
-            text-decoration: underline;
         }
 
-        .contact-info div {
-            width: 100%;
-            border-spacing: 0 1rem;
-            margin-bottom: .5rem;
+        h3 {
+            padding-bottom: 5px;
+            /* margin-bottom: 15px; */
+            /* font-weight: bold; */
+            /* font-size: 1.8rem; */
+        }
+
+        p {
+            margin: 10px 0;
+            /* font-size: 1rem; */
+            /* color: #444; */
+        }
+
+        ul {
+            /* list-style: disc; */
+            margin: 0;
+            /* padding-left: 20px; */
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            /* font-size: 1rem; */
         }
 
         .social-links {
             list-style: none;
             display: flex;
-            /* padding-left: 1rem; */
-            gap: 3rem;
-        }
-        
-        .social-links li {
-            /* gap: 5rem; */
-            margin: 10px 0;
+            gap: 10px;
+            padding-top: 10px;
         }
 
         .social-links a {
             text-decoration: none;
             color: #3498db;
-            font-size: 18px;
+            /* font-size: 1rem; */
+            /* margin-left: -10px; */
+            text-decoration: none;
+            border: 1px solid #007BFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         .social-links a:hover {
-            color: #2c3e50;
+            background-color: #007BFF;
+            color: #fff;
         }
 
         .social-links i {
             margin-right: 10px;
-            font-size: 20px;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="container1">
-            <h1>Sheikh Abdullah Hussain</h1>
-            <a href="YOUR_CV_FILE_URL.pdf" class="download-button"><img
-                    src="https://firebasestorage.googleapis.com/v0/b/images-394d7.appspot.com/o/downloading.png?alt=media&token=758530c8-b889-4e14-98de-76950a3535f8"
-                    alt=""></a>
-        </div>
+    <section>
+        <div class="container">
+            <div class="container1">
+                <h1>Sheikh Abdullah Hussain</h1>
+                <a href="YOUR_CV_FILE_URL.pdf" class="download-button"><img
+                        src="https://firebasestorage.googleapis.com/v0/b/images-394d7.appspot.com/o/downloading.png?alt=media&token=758530c8-b889-4e14-98de-76950a3535f8"
+                        alt=""></a>
+            </div>
 
-        <div class="section">
-            <h2>Objective</h2>
-            <p>To secure a challenging position in a dynamic and progressive organization where I can utilize my skills,
-                knowledge, and dedication to contribute effectively to its growth and success while advancing my
-                professional development.</p>
-        </div>
+            <div class="section">
+                <h2>Objective</h2>
+                <p>To secure a challenging position in a dynamic and progressive organization where I can utilize my
+                    skills,
+                    knowledge, and dedication to contribute effectively to its growth and success while advancing my
+                    professional development.</p>
+            </div>
 
-        <div class="section">
-            <h2>Academic Qualification</h2>
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Bachelor of Business & Information Technology (BBIT):</strong> Virtual University of
-                    Pakistan (4th Semester in progress)</li>
-                <li><strong>Intermediate in Science (FSc):</strong> Board of Intermediate Education</li>
-                <li><strong>Matriculation in Science:</strong> Secondary Board of Education</li>
-            </ul>
-            <h3>Professional Training</h3>
-            <ul>
-                <li><strong>Generative AI & Chatbot Development:</strong> In progress (Saylani Mass IT Training Program)
-                </li>
-                <li><strong>Web & App Frontend Development:</strong> Saylani Mass IT Training Program</li>
-                <li><strong>Diploma in Information Technology (2022):</strong> Vocational Training Center</li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Academic Qualification</h2>
+                <h3>Education:</h3>
+                <ul>
+                    <li><strong>Bachelor of Business & Information Technology (BBIT):</strong> Virtual University of
+                        Pakistan (4th Semester in progress)</li>
+                    <li><strong>Intermediate in Science (FSc):</strong> Board of Intermediate Education</li>
+                    <li><strong>Matriculation in Science:</strong> Secondary Board of Education</li>
+                </ul>
+                <h3>Professional Training:</h3>
+                <ul>
+                    <li><strong>Generative AI & Chatbot Development:</strong> In progress (Saylani Mass IT Training
+                        Program)
+                    </li>
+                    <li><strong>Web & App Frontend Development:</strong> Saylani Mass IT Training Program</li>
+                    <li><strong>Diploma in Information Technology (2022):</strong> Vocational Training Center</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Frontend Developer – 1.5 years:</strong> Designed and developed responsive websites and
-                    applications using HTML, CSS, JavaScript, React, and React Native.</li>
-                <li><strong>Generative AI Chatbot Developer – 6 months:</strong> Developed AI chatbots using frameworks
-                    like Flowise, Kommunicate, and Dialogflow, focusing on creating intelligent and conversational
-                    applications.</li>
-                <li><strong>Python Developer – 6 months:</strong> Worked on basic Python projects, solved programming
-                    problems.</li>
-                <li><strong>Teacher (The Education Academy) – 1.5 years:</strong> Taught core subjects and prepared
-                    lesson plans to enhance student performance.</li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Frontend Developer – 1.5 years:</strong> Designed and developed responsive websites and
+                        applications using HTML, CSS, JavaScript, React, and React Native.</li>
+                    <li><strong>Generative AI Chatbot Developer – 6 months:</strong> Developed AI chatbots using
+                        frameworks
+                        like Flowise, Kommunicate, and Dialogflow, focusing on creating intelligent and conversational
+                        applications.</li>
+                    <li><strong>Python Developer – 6 months:</strong> Worked on basic Python projects, solved
+                        programming
+                        problems.</li>
+                    <li><strong>Teacher (The Education Academy) – 1.5 years:</strong> Taught core subjects and prepared
+                        lesson plans to enhance student performance.</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Technical Proficiency:</strong> MS Office, Web Development (Frontend)</li>
-                <li><strong>Programming Languages & Tools:</strong> HTML, CSS, JavaScript, React.js, React Native</li>
-                <li><strong>Soft Skills:</strong> Quick Learner, Problem-Solving</li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Technical Proficiency:</strong> MS Office, Web Development (Frontend)</li>
+                    <li><strong>Programming Languages & Tools:</strong> HTML, CSS, JavaScript, React.js, React Native
+                    </li>
+                    <li><strong>Soft Skills:</strong> Quick Learner, Problem-Solving</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Social Links</h2>
-            <!-- <ul>
-                <li><strong>Email:</strong> <a
-                        href="mailto:abdullahhussain0501@gmail.com">abdullahhussain0501@gmail.com</a></li>
-                <li><strong>Contact:</strong> <a href="">+92 3021020813</a></li>
-                <li><strong>Portfolio:</strong> <a href="https://sheikhabdullah.netlify.app/"
-                        target="_blank">https://sheikhabdullah.netlify.app/</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sheikhabdullah01/"
-                        target="_blank">www.linkedin.com/in/sheikhabdullah01/</a></li>
-                <li><strong>GitHub:</strong> <a href="https://www.github.com/SheikhAbdullah1/"
-                        target="_blank">www.github.com/SheikhAbdullah1/</a></li>
-            </ul> -->
-            <ul class="social-links">
-                <li><a href="mailto:abdullahhussain0501@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
-                <li><a href="tel:+923021020813"><i class="fas fa-phone"></i>Contact</a></li>
-                <li><a href="https://sheikhabdullah.netlify.app/" target="_blank"><i
-                            class="fas fa-globe"></i>Portfolio</a></li>
-                <li><a href="https://www.linkedin.com/in/sheikhabdullah01/" target="_blank"><i
-                            class="fab fa-linkedin"></i>LinkedIn</a></li>
-                <li><a href="https://www.github.com/SheikhAbdullah1/" target="_blank"><i
-                            class="fab fa-github"></i>GitHub</a></li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Social Links</h2>
+                <ul class="social-links">
+                    <li><a href="mailto:abdullahhussain0501@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
+                    <li><a href="tel:+923021020813"><i class="fas fa-phone"></i>Contact</a></li>
+                    <li><a href="https://sheikhabdullah.netlify.app/" target="_blank"><i
+                                class="fas fa-globe"></i>Portfolio</a></li>
+                    <li><a href="https://www.linkedin.com/in/sheikhabdullah01/" target="_blank"><i
+                                class="fab fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="https://www.github.com/SheikhAbdullah1/" target="_blank"><i
+                                class="fab fa-github"></i>GitHub</a></li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Reference</h2>
-            <p>Will be furnished upon request.</p>
+            <div class="section">
+                <h2>Reference</h2>
+                <p>Will be furnished upon request.</p>
+            </div>
         </div>
-    </div>
-
+    </section>
 </body>
 
 </html>

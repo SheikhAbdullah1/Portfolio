@@ -549,13 +549,13 @@ span {
     background: var(--text-color);
 } */
 
-.portfolio-container {
+.portfolio-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-container .portfolio-box{
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 4px 24px rgba(15, 23, 42, 0.1);
@@ -565,18 +565,6 @@ span {
   width: 100%;
   height: 200px;
 }
-/* .portfolio-container .portfolio-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;  
-} */
 
 .portfolio-box img {
   width: 100%;
@@ -647,29 +635,46 @@ span {
   }
 }
 
-/* .filter-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
+/* Certificate Section */
+.certifiactes{
+  background-color: var(--bg-color);
+  padding: 10rem 9% 20rem;
 }
 
-.filter-btn {
-    background: var(--main-color);
-    color: var(--text-color);
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    margin: 0 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+.certifiactes h2 {
+  margin-bottom: 4rem;
 }
 
-.filter-btn:hover {
-    background: darken(var(--main-color), 10%);
-} */
+.certifiactes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.certifiactes-container .certifiactes-box {
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.1);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.certifiactes-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+
 
 /* Contact Section */
+.contact{
+  background-color: var(--second-bg-color);
+}
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -679,6 +684,7 @@ span {
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
+  /* background-color: var(--bg-color); */
 }
 
 .contact form .input-box {

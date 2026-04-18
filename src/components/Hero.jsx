@@ -40,8 +40,8 @@ const Hero = () => {
         <section className="home" id="home">
             <motion.div 
                className="home-content"
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
+               initial={{ opacity: 0, x: -50 }}
+               animate={{ opacity: 1, x: 0 }}
                transition={{ duration: 1.2 }}
             >
                 <p className="home-greeting">Hello, It's Me</p>
@@ -67,6 +67,15 @@ const Hero = () => {
                     </a>
                 </div>
                 <a href="/cv.html" target="_blank" className="btn btn-cv" rel="noreferrer">Download CV</a>
+            </motion.div>
+
+            <motion.div 
+                className="home-img"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2 }}
+            >
+                <img src="/Images/Office_look_img1-removebg-preview.png" alt="Sheikh Abdullah Hussain — professional transparent portrait" />
             </motion.div>
         </section>
     );

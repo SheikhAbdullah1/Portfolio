@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sheikh Abdullah Hussain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --second-bg-color: #F8FAFC;
+            --text-color: #0F172A;
+            --text-muted: #475569;
+            --main-color: #0F766E;
+            --border-color: #E2E8F0;
+            --accent-soft: rgba(15, 118, 110, 0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0F172A;
+                --second-bg-color: #1E293B;
+                --text-color: #F1F5F9;
+                --text-muted: #94A3B8;
+                --main-color: #2DD4BF;
+                --border-color: #334155;
+                --accent-soft: rgba(45, 212, 191, 0.1);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-rendering: optimizeSpeed;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 40px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            padding: 60px 70px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 40px 25px;
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--main-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--text-muted);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-color);
+            margin-bottom: 18px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .summary p {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .entry {
+            margin-bottom: 22px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .entry-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-color);
+        }
+
+        .entry-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .entry-org {
+            font-weight: 600;
+            color: var(--main-color);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 5px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--main-color);
+        }
+
+        .skills-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-item {
+            font-size: 0.92rem;
+        }
+
+        .skill-item strong {
+            color: var(--text-color);
+            font-weight: 600;
+            min-width: 140px;
+            display: inline-block;
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-container { box-shadow: none; border: none; width: 100%; max-width: 100%; padding: 0; }
+            .btn-print { display: none; }
+            h1 { color: black; }
+            h2 { border-bottom-color: #000; }
+            .subtitle { color: #000; }
+            .entry-org { color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+<button class="btn-print" onclick="window.print()">Print Resume</button>
+
+<div class="resume-container">
+    <header>
+        <h1>Sheikh Abdullah</h1>
+        <div class="subtitle">Web & App Developer | AI Chatbot Specialist</div>
+        <div class="contact-info">
+            <span>Karachi, Pakistan</span>
+            <span>+92 302 1020813</span>
+            <a href="mailto:abdullahhussain0501@gmail.com">abdullahhussain0501@gmail.com</a>
+            <a href="https://sheikhabdullah.netlify.app">sheikhabdullah.netlify.app</a>
+        </div>
+    </header>
+
+    <section class="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Results-driven Web & App Developer and Generative AI specialist with over 2 years of professional experience. 
+            Expert in architecting modern web ecosystems using React and developing intelligent conversational agents with 
+            cutting-edge NLP tools. Proven track record of automating complex business workflows and delivering high-performance, 
+            user-centric digital solutions.
+        </p>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Web & App Developer</div>
+                <div class="entry-date">September 2023 — Present</div>
+            </div>
+            <div class="entry-org">Freelance Projects</div>
+            <ul>
+                <li>Architected and deployed responsive web ecosystems using React.js, Vite, and Framer Motion.</li>
+                <li>Developed cross-platform mobile applications, optimizing performance and UI/UX consistency.</li>
+                <li>Collaborated with clients to translate business requirements into scalable technical solutions.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Generative AI Chatbot Developer</div>
+                <div class="entry-date">September 2023 — Present</div>
+            </div>
+            <div class="entry-org">Freelance / Contract</div>
+            <ul>
+                <li>Engineered custom AI conversational agents using Flowise, Dialogflow, and Node.js.</li>
+                <li>Automated business operations by integrating AI solutions with WhatsApp and Facebook Messenger.</li>
+                <li>Implemented Natural Language Processing (NLP) models to handle multi-step customer inquiries autonomously.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Teacher</div>
+                <div class="entry-date">September 2023 — Present</div>
+            </div>
+            <div class="entry-org">The Education Academy</div>
+            <ul>
+                <li>Developed and delivered technical curriculum, significantly improving student engagement and digital literacy.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-content">
+            <div class="skill-item"><strong>Frontend Development:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, React Native, Bootstrap, Vite</div>
+            <div class="skill-item"><strong>AI & Automation:</strong> Generative AI, Flowise, Dialogflow, Kommunicate, NLP Integration</div>
+            <div class="skill-item"><strong>Backend & Databases:</strong> Node.js, Python, RESTful APIs, MongoDB</div>
+            <div class="skill-item"><strong>Tools & Version Control:</strong> Git, GitHub, VS Code, MS Office, API Integration</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Bachelor of Business & Information Technology (BBIT)</div>
+                <div class="entry-date">Expected 2027</div>
+            </div>
+            <div class="entry-org">Virtual University of Pakistan</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Intermediate (Pre-Engineering)</div>
+                <div class="entry-date">2019 — 2021</div>
+            </div>
+            <div class="entry-org">Pak. Ship Owners College</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Online Presence</h2>
+        <div class="skill-item"><strong>Portfolio:</strong> sheikhabdullah.netlify.app</div>
+        <div class="skill-item"><strong>GitHub:</strong> github.com/SheikhAbdullah1</div>
+        <div class="skill-item"><strong>LinkedIn:</strong> linkedin.com/in/sheikhabdullah01</div>
+    </section>
+</div>
+
+</body>
+</html>
